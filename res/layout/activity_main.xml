@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/pen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pen" />
+
+        <ImageButton
+            android:id="@+id/eraser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_eraser" />
+
+        <ImageButton
+            android:id="@+id/undo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_undo" />
+
+        <ImageButton
+            android:id="@+id/redo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_redo" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/spenContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/panel" >
+
+        <RelativeLayout
+            android:id="@+id/spenlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

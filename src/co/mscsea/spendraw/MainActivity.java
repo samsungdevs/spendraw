@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,8 +16,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
-import co.mscsea.spendraw.R;
 import co.mscsea.util.PenUtils;
 import co.mscsea.util.SpenHoverListenerExt;
 
@@ -470,4 +469,9 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 		}
 	}
+	
+		@Override
+		public void onConfigurationChanged(Configuration newConfig) {
+			super.onConfigurationChanged(newConfig);
+		}
 }
